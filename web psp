@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head></head>
+<title>primeira pagina web</title>
+<body>analise e desenvolvimento de sistemas
+    <body bgcolor="grey"
+    <h1>fasf luz</h1>
+    <h2>2º periodo</h2>
+    <h3>prof stella</h3>
+    <head>
+        <title>pagina 1</title>
+    </head>
+
+    <p align = "center"> <b> <font color ="black" face ="arial" size=10>primeira formatação</font></b>
+        Academia. Treino de corpo, e mente! 
+    <font color ="red" face ="arial" size =8> </font>
+    para ir para pagina 2,
+    <a href="pagina2.hmtl" target="_blank">
+        clique aqui</a>
+        <head>
+            <title>listas</title>
+        </head>        
+        <ul>
+            <font color="blue" face="arial" size="5">Semana</font>
+            <li>2ªFeira, treino de perna completo</li>
+            <li>3ªFeira, treino de costas completo</li>
+            <li>4ªFeira, treino de peito e ombro</li>
+            <li>5ªFeira, treino de posterior e panturrilha</li>
+            <li>6ªFeira, treino de biceps e triceps</li>
+            <li>Final de semana, cardio, abdomen e flexao</li>
+        </ul>
+        <font color="blue" face="arial" size="5">Rotina</font>
+        <ol>
+            <li>dormi bem</li>
+            <li>acorda cedo</li>
+            <li>alimentar bem</li>
+        </ol>
+        <font color="blue" face="arial" size="5">Academia</font>
+        <h1>EU AMO ACADEMIA</h1><br>
+        <img src="C:\Users\Marissa - Direito\Pictures\imagem png.png" aling="center" width="300" height="300"></p>
+        <h1>Clique no link para acessa o site</h1>
+        <h2><a href="C:\Users\Marissa - Direito\Pictures\imagem png.png">meu site</a></h2>
+
+</body>
+
+
+
+</html>
