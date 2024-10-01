@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade Stella</title>
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Estilos da Tabela */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+            color: white;
+            background-color: #4CAF50;
+        }
+
+        th {
+            background-color:rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffffff;
+            color: #0c0808;
+            
+        }
+
+    </style>
+    <body>
+        <table border="8" width="80%" aling="center">
+           
+        <td colspan="4" align="center"><font size="7">Informações dos Funcionarios</font></td>
+            <tr>
+            <td width="20%">Nome</td><td width="20%">Idade<td width="20%">Cargo</td><td width="20%">E-mail</td>
+            
+                
+              
+            <tr>/
+            
+                
+                <th>Maria Silva</th>
+                <th>25</th>
+                <th>Mecânica</th>
+                <th>marisilva1@gmail.com</th>
+            </tr>
+           
+                
+                <th>Carlos Pereira</th>
+                <th>37</th>
+                <th>Recursos Humanos(RH)</th>
+                <th>carlin77@gmail.com</th>
+            </tr>
+           
+                
+                <th>Carla Mendes</th>
+                <th>30</th>
+                <th>Recursos Humanos(RH)</th>
+                <th>carlamen4@gmail.com</th>
+                </table>
+                </body>
+    </html>
