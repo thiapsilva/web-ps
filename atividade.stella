@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+           
+        <h1>Stella Dornelas</h1>
+        <p>Professora.</p>
+    
+    </header>
+
+    <main>
+        <section >
+            <h2>Hobbies e Interesses</h2>
+            <ul>
+                <li>Dormir</li>
+                <li>Comer</li>
+                <li>Passear</li>
+            </ul>
+        </section>
+
+        <section >
+            <h2>Biografia</h2>
+            <p>Aqui vai uma breve biografia da pessoa, contando um pouco sobre ela e suas conquistas.</p>
+        </section>
+        <section>
+            <h2>familia</h2>
+            <p>***</p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Contato: pessoa@email.com</p>
+        <p><a href="#">Facebook</a> | <a href="#">LinkedIn</a> | <a href="#">Instagram</a></p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+           
+        <h1>Stella Dornelas</h1>
+        <p>Professora.</p>
+    
+    </header>
+
+    <main>
+        <section >
+            <h2>Hobbies e Interesses</h2>
+            <ul>
+                <li>Dormir</li>
+                <li>Comer</li>
+                <li>Passear</li>
+            </ul>
+        </section>
+
+        <section >
+            <h2>Biografia</h2>
+            <p>Aqui vai uma breve biografia da pessoa, contando um pouco sobre ela e suas conquistas.</p>
+        </section>
+        <section>
+            <h2>familia</h2>
+            <p>***</p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Contato: pessoa@email.com</p>
+        <p><a href="#">Facebook</a> | <a href="#">LinkedIn</a> | <a href="#">Instagram</a></p>
+    </footer>
+</body>
+</html>
