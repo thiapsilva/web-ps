@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        /*DEFINA A LARGURA DO CONTAINER*/
+        width: 90%;
+        /*DEFINE A LARGURA MAXIMA*/
+        max-width: 1190px;
+        /*CENTRALIZA*/
+        margin: 10;
+        /*ADICIONA ESPAÇAMENTO*/
+        padding: 50px;
+        border-radius: 8px;
+        background-color: rgb(12, 107, 151);
+        display: flex;
+        justify-content: wrap;
+       
+        
+        
+        
+    }
+    h1{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        transform: scale(1.5);
+    }
+    P{
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 10%;
+        transform: scale(1.7);
+       
+    }
+    .item{
+        background-color: rgb(20, 167, 142);
+        color: rgb(255, 252, 252);
+        margin: 8px;
+        flex: 1 1 100px;
+        border: 8px;
+        text-align: center;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 90px;
+       line-height: 1.4;
+       box-sizing: border-box;
+       width: 100px;
+       height: 40px;
+    }
+    .container:hover{
+        transform: scale(1.02);
+        transition: transform 0.3s;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    @media (max-width: 768px) {
+        .container{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .item{
+        flex-direction: 1 1 100px;
+
+    } 
+        
+    }
+ 
+</style>
+<body>
+    <div class="container">
+        <h1>"Container"</h1>
+        <p>*Isso é apenas um exemplo da aula da Stella*</p>
+        <!--container flex-->
+    <div class="item">Telefone</div>
+    
+    <div class="item">Instagram</div>
+    
+    <div class="item">Telegram</div>
+    
+</body>
+</html>
