@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste no js</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        color: black;
+
+    }
+
+</style>
+<body>
+    <h1>TESTE JS</h1>
+    <script src="index.js"></script>
+    <p id="texto"></p>
+    <script>
+        document.write(' Oi <ul> ecrito com o documento.write </ul>');
+
+    </script>
+    <script>
+        var num1 = parseFloat(prompt("digite um numero 01"));
+        var num2 = parseFloat(prompt("digite um numero 02"));
+        var confirma = confirm("deseja realizar a soma de "+num1+
+        "+" +num2+ ":")
+        if (confirma){
+            var soma = num1 + num2;
+            document.getElementById("resultado").innerText =confirma =
+            "calculo nao realizado";
+        }
+        else{ document.getElementById("resultado").innerText =
+        "calculo realizado"
+
+        }
+        setTimeout (function(){
+            alert("03 segundos");} 3000)
+            
+
+    </script>
+    <script>
+        document.getElementById(botao).addEventListener("click" , function;
+        alert("clicando");
+    </script>
+    
+    </script>
+</body>
+</html>
