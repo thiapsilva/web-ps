@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <h1>Salario</h1>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="endereço"><br><br><br>        
+            <label for="nome">Endereço</label>
+            <label for="nome">Salario</label>
+            <input type="number" id="salario_base"><br><br>
+            <input type="number">
+            <button id="confirmar">Confirmar</button>
+             
+    </form>
+    <script>
+        document.getElementById("confirmar").addEventListener("click", function () { 
+        var nome = (document.getElementById("nome").value);
+        var endereço = (document.getElementById("endereço").value);
+        var Salario = (document.getElementById("salario_base").value)
+        var ano_atual = new Date().getFullYear;
+        var anos_trabalhado = ano_atual
+        document.write("o endereço é: " + endereço);
+        document.write(" o nome é " + nome);
+        document.write("o salario é: " + Salario);
+      
+     });
+    </script>
+</body>
+</html>
