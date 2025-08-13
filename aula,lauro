@@ -1,0 +1,33 @@
+// See https://aka.ms/new-console-template for more information
+//parte 1
+Console.WriteLine("Hello, World!");
+//parte 2
+int numeroInteiro1 = 10;
+int numeroInteiro2 = 5;
+Console.WriteLine($"numeros inteiros: {numeroInteiro1} and {numeroInteiro2}");
+//operações basicas com numeros
+Console.WriteLine($"Soma (int) : {numeroInteiro1} + {numeroInteiro2}");
+Console.WriteLine($"Subtração (int): {numeroInteiro1 - numeroInteiro2}");
+Console.WriteLine($"Multiplicão (int): {numeroInteiro1 * numeroInteiro2}");
+Console.WriteLine($"Divisão (int): {numeroInteiro2 / numeroInteiro2}");
+Console.WriteLine("\n");
+//Declaração e inicialização da variavel double
+double numeroDoble1 = 15.5;
+double numeroDoble2 = 2.5;
+Console.WriteLine($"numerosDoble: {numeroDoble1} and {numeroDoble2}");
+//Operações basicas com o double
+Console.WriteLine($"Soma (double): {numeroDoble1 + numeroDoble2}");
+Console.WriteLine($"Subtração (double): {numeroDoble1 - numeroDoble2}");
+Console.WriteLine($"Multiplicação (double): {numeroDoble1 * numeroDoble2}");
+Console.WriteLine($"Divisão (double): {numeroDoble1 / numeroDoble2}");
+Console.WriteLine("\n");
+//Requisitos 3: Incluir variáveis do tipo string e demonstrar o uso de quatro metodos com elas.
+Console.WriteLine("Demonstrando metodos com variaveis string");
+
+string minhaString = "Hello CShar´Word";
+Console.WriteLine($"String original: \" {minhaString}\"");
+
+//Metodo 1: Length (obtém o comprimento da string)
+Console.WriteLine($"Comprimento da String: {minhaString.Length}");
+
+//
