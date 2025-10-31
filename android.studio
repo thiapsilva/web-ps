@@ -1,0 +1,154 @@
+> gabriel:
+package com.example.magic8ball
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.TextFieldValue
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            Magic8BallTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    FormularioAgendamento()
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun Magic8BallTheme(content: @Composable () -> Unit) {
+    MaterialTheme(
+        colorScheme = lightColorScheme(),
+        typography = Typography(),
+        content = content
+    )
+}
+
+@Composable
+fun FormularioAgendamento() {
+    var nome by remember { mutableStateOf(TextFieldValue("")) }
+    var numero by remember { mutableStateOf(TextFieldValue("")) }
+    var dataHora by remember { mutableStateOf("") }
+    var tipoCorte by remember { mutableStateOf(TextFieldValue("")) }
+
+    var mostrarTabela by remember { mutableStateOf(false) }
+
+    // Exemplo de datas e horas disponíveis
+    val opcoesDatas = listOf(
+        "Segunda 09:00", "Segunda 10:00", "Segunda 11:00", "Segunda 13:00", "Segunda 14:00", "Segunda 15:00", "Segunda 16:00", "Segunda 17:00", "Segunda 18:00",
+        "Terça 09:00", "Terça 10:00", "Terça 11:00", "Terça 13:00", "Terça 14:00", "Terça 15:00", "Terça 16:00", "Terça 17:00", "Terça 18:00",
+        "Quarta 09:00", "Quarta 10:00", "Quarta 11:00", "Quarta 13:00", "Quarta 14:00", "Quarta 15:00", "Quarta 16:00", "Quarta 17:00", "Quarta 18:00",
+        "Quinta 09:00", "Quinta 10:00", "Quinta 11:00", "Quinta 13:00", "Quinta 14:00", "Quinta 15:00", "Quinta 16:00", "Quinta 17:00", "Quinta 18:00",
+        "Sexta 09:00", "Sexta 10:00", "Sexta 11:00", "Sexta 13:00", "Sexta 14:00", "Sexta 15:00", "Sexta 16:00", "Sexta 17:00", "Sexta 18:00",
+    )
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(24.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text("Agendamento de Corte de Cabelo", style = MaterialTheme.typography.headlineSmall)
+
+        Spacer(modifier = Modifier.height(20.dp))
+
+        OutlinedTextField(
+            value = nome,
+            onValueChange = { nome = it },
+            label = { Text("Nome do cliente") },
+            modifier = Modifier.fillMaxWidth()
+        )
+
+        OutlinedTextField(
+            value = numero,
+            onValueChange = { numero = it },
+            label = { Text("Contato") },
+            modifier = Modifier.fillMaxWidth()
+        )
+
+        // Campo de data e hora que exibe a tabela ao clicar
+        OutlinedTextField(
+            value = dataHora,
+            onValueChange = { dataHora = it },
+            label = { Text("Data e Hora") },
+            modifier = Modifier
+                .fillMaxWidth()
+                .clickable { mostrarTabela = !mostrarTabela },
+            enabled = false, // impede edição manual
+            readOnly = true
+        )
+
+        // Tabela aparece ao clicar
+        if (mostrarTabela) {
+            Spacer(modifier = Modifier.height(10.dp))
+            LazyVerticalGrid(
+                columns = GridCells.Fixed(3),
+                modifier = Modifier
+                    .fillMaxWidth()
+
+                        > gabriel:
+                .height(100.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                items(opcoesDatas) { opcao ->
+                    Button(
+                        onClick = {
+                            dataHora = opcao
+                            mostrarTabela = false
+                        },
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Text(opcao)
+                    }
+                }
+            }
+        }
+
+        Spacer(modifier = Modifier.height(10.dp))
+
+        OutlinedTextField(
+            value = tipoCorte,
+            onValueChange = { tipoCorte = it },
+            label = { Text("Estilo do Corte") },
+            modifier = Modifier.fillMaxWidth()
+        )
+
+        Spacer(modifier = Modifier.height(20.dp))
+
+        Button(onClick = {
+            // Aqui você pode salvar ou enviar os dados
+        }) {
+            Text("Agendar")
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewFormularioAgendamento() {
+    Magic8BallTheme {
+        FormularioAgendamento()
+    }
+}
